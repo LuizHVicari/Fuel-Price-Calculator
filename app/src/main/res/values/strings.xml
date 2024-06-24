@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">Fuel Price Calculator</string>
+    <string name="fuel_1_consumption">Fuel 1 Consumption</string>
+    <string name="fuel_2_consumption">Fuel 2 Consumption</string>
+    <string name="cost_per_liter_for_fuel_1">Cost of Fuel 1</string>
+    <string name="cost_per_liter_for_fuel_2">Cost of Fuel 2</string>
+    <string name="calculate">Calculate</string>
+    <string name="the_best_fuel_option_is_s">The best fuel option is: %s</string>
+    <string name="fuel_option_does_not_matter">Both fuels are the same value</string>
+    <string name="consumption_of_fuel_1">Consumption of fuel 1</string>
+    <string name="eg_consumption" translatable="false">10.0</string>
+    <string name="eg_consumption_2" translatable="false">15.0</string>
+    <string name="eg_cost_1" translatable="false">5.70</string>
+    <string name="eg_cost_2" translatable="false">4.50</string>
+    <string name="consumption_unit">(mi/gal)</string>
+    <string name="show_difference">Show Difference</string>
+    <string name="fuel_1">Fuel 1</string>
+    <string name="fuel_2">Fuel 2</string>
+    <string name="fuel_1_autonomy">Using fuel 1, with U$ 100.00, you can have an autonomy of %s mi</string>
+    <string name="fuel_2_autonomy">Using fuel 2, with U$ 100.00, you can have an autonomy of %s mi</string>
+    <string name="page_2_title">Comparison Between Fuel 1 and Fuel 2</string>
+
+    <string-array name="fuels_en">
+        <item name="custom">Custom</item>
+        <item name="gasoline">Gasoline</item>
+        <item name="ethanol">Ethanol</item>
+        <item name="natural_gas">Natural Gas</item>
+    </string-array>
+
+    <string-array name="fuels_pt">
+        <item>Personalizado</item>
+        <item>Gasolina</item>
+        <item>Etanol</item>
+        <item>Gás Natural</item>
+    </string-array>
+    <string name="comsumption_not_found">Consumption not found</string>
+    <string name="consumption_error_message">You must either choose an item from fuel selection or type a value</string>
+    <string name="cost_not_found">Cost not found</string>
+    <string name="cost_error">You must provide the cost of the fuel</string>
 </resources>

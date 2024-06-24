@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora de Preço de Combustível</string>
+    <string name="fuel_1_consumption">Consumo do Combustível 1</string>
+    <string name="fuel_2_consumption">Consumo do Combustível 2</string>
+    <string name="cost_per_liter_for_fuel_1">Preço do Combustível 1</string>
+    <string name="cost_per_liter_for_fuel_2">Preço do Combustível 2</string>
+    <string name="calculate">Calcular</string>
+    <string name="the_best_fuel_option_is_s">A melhor opção de combustível é: %s</string>
+    <string name="fuel_option_does_not_matter">Ambos os combustíveis tem o mesmo valor</string>
+    <string name="consumption_of_fuel_1">Consumo do combustível 1</string>
+    <string name="consumption_unit">(km/l)</string>
+    <string name="show_difference">Mostrar diferença</string>
+    <string name="fuel_1">Combustível 1</string>
+    <string name="fuel_2">Combustível 2</string>
+    <string name="fuel_1_autonomy">Usando o combustível 1, com R$100,00, você pode percorrer até %s Km</string>
+    <string name="fuel_2_autonomy">Usando o combustível 2, com R$100,00, você pode percorrer até %s Km</string>
+    <string name="page_2_title">Comparação entre Combustível 1 e Combustível 2</string>
+    <string name="comsumption_not_found">Consumo não encontrado</string>
+    <string name="consumption_error_message">Você deve selecionar um combustível ou digitar o valor</string>
+    <string name="cost_not_found">Custo não encontrado</string>
+    <string name="cost_error">Você deve fornecer o valor do custo do combustível</string>
+</resources>

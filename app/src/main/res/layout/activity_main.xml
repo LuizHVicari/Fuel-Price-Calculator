@@ -8,12 +8,219 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_consumption_1"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/fuel_1_consumption"
+        android:textColor="@color/md_theme_secondary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_consumption_1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_consumption_1"
+        app:layout_constraintStart_toEndOf="@+id/tv_consumption_1"
+        app:layout_constraintTop_toTopOf="@+id/tv_consumption_1"
+        android:contentDescription="@string/consumption_of_fuel_1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:hint="@string/eg_consumption_2"
+            android:inputType="number|numberDecimal"
+            android:textColorHint="@color/md_theme_secondary"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/md_theme_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_consumption_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/fuel_2_consumption"
+        android:textColor="@color/md_theme_secondary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_consumption_1"
+        app:layout_constraintTop_toBottomOf="@+id/ti_consumption_1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_consumption_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_consumption_2"
+        app:layout_constraintStart_toStartOf="@+id/ti_consumption_1"
+        app:layout_constraintTop_toTopOf="@+id/tv_consumption_2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:hint="@string/eg_consumption"
+            android:inputType="number|numberDecimal"
+            android:textColorHint="@color/md_theme_secondary"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_cost_1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/cost_per_liter_for_fuel_1"
+        android:textAlignment="viewStart"
+        android:textColor="@color/md_theme_secondary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_consumption_2"
+        app:layout_constraintTop_toBottomOf="@+id/ti_consumption_2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_cost_1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_cost_1"
+        app:layout_constraintStart_toStartOf="@+id/ti_consumption_2"
+        app:layout_constraintTop_toTopOf="@+id/tv_cost_1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:hint="@string/eg_cost_1"
+            android:inputType="number|numberDecimal"
+            android:textColorHint="@color/md_theme_secondary"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_cost_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/cost_per_liter_for_fuel_2"
+        android:textColor="@color/md_theme_secondary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_consumption_1"
+        app:layout_constraintTop_toBottomOf="@+id/ti_cost_1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_cost_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_cost_2"
+        app:layout_constraintStart_toStartOf="@+id/ti_cost_1"
+        app:layout_constraintTop_toTopOf="@+id/tv_cost_2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:hint="@string/eg_cost_2"
+            android:inputType="number|numberDecimal"
+            android:textColorHint="@color/md_theme_secondary"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_calculate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/md_theme_tertiary"
+        android:text="@string/calculate"
+        android:textColor="@color/md_theme_tertiaryContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_show_difference" />
+
+    <Spinner
+        android:id="@+id/sp_fuels_1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ti_consumption_1"
+        app:layout_constraintStart_toEndOf="@+id/ti_consumption_1"
+        app:layout_constraintTop_toTopOf="@+id/ti_consumption_1" />
+
+
+    <Spinner
+        android:id="@+id/sp_fuels_2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ti_consumption_2"
+        app:layout_constraintStart_toEndOf="@+id/ti_consumption_2"
+        app:layout_constraintTop_toTopOf="@+id/ti_consumption_2" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/the_best_fuel_option_is_s"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ti_cost_2" />
+
+    <TextView
+        android:id="@+id/tv_galmi_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/consumption_unit"
+        app:layout_constraintEnd_toEndOf="@+id/tv_consumption_1"
+        app:layout_constraintStart_toStartOf="@+id/tv_consumption_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_consumption_1" />
+
+    <TextView
+        android:id="@+id/tv_galmi_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/consumption_unit"
+        app:layout_constraintEnd_toEndOf="@+id/tv_consumption_2"
+        app:layout_constraintStart_toStartOf="@+id/tv_consumption_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_consumption_2" />
+
+    <Button
+        android:id="@+id/bt_show_difference"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/md_theme_tertiary"
+        android:clickable="false"
+        android:text="@string/show_difference"
+        android:textColor="@color/md_theme_tertiaryContainer"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
