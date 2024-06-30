@@ -2,6 +2,7 @@ package com.github.fuelpricecalculator
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
 import android.view.View
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AlertDialog
@@ -56,6 +57,21 @@ class MainActivity : AppCompatActivity() {
         binding.btShowDifference.setOnClickListener {
             btShowDifferenceOnClick()
         }
+
+        binding.tvTitle.setOnClickListener{
+            tvTitleOnClick()
+        }
+    }
+
+    private fun tvTitleOnClick(){
+        binding.tfConsumption1.hint = ""
+        binding.tfConsumption1.setText("")
+        binding.tfConsumption2.hint = ""
+        binding.tfConsumption2.setText("")
+        binding.tfCost1.hint = ""
+        binding.tfCost1.setText("")
+        binding.tfCost2.hint = ""
+        binding.tfCost2.setText("")
     }
 
     private fun btShowDifferenceOnClick() {

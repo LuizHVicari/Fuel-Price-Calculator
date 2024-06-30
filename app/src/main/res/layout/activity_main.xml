@@ -31,6 +31,7 @@
         android:contentDescription="@string/consumption_of_fuel_1">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tf_consumption_1"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:hint="@string/eg_consumption_2"
@@ -77,6 +78,7 @@
         app:layout_constraintTop_toTopOf="@+id/tv_consumption_2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tf_consumption_2"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:hint="@string/eg_consumption"
@@ -107,6 +109,7 @@
         app:layout_constraintTop_toTopOf="@+id/tv_cost_1">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tf_cost_1"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:hint="@string/eg_cost_1"
@@ -136,6 +139,7 @@
         app:layout_constraintTop_toTopOf="@+id/tv_cost_2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tf_cost_2"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:hint="@string/eg_cost_2"
